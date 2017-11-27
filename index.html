@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Expandable Menu</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/expm.css" />
+ <script type="text/javascript">
+  $(document).ready(function () {
+      $('#billsMenu').hover(function () {
+          $('#bills').fadeIn();
+      },function () {
+          $('#bills').fadeOut();
+      });
+      $('#brownsMenu').hover(function () {
+          $('#browns').fadeIn();
+      },function () {
+          $('#browns').fadeOut();
+      });
+  });
+ </script>
+
+</head>
+
+<body>
+<h1>National Football League</h1>
+<h2>Hall of Fame Players</h2>
+<p id="billsMenu"><a href="">Buffalo Bills</a></p>
+<div id="bills" class="collapsed">
+ <p>Joe DeLamielleure '03, Jim Kelly '02, Marv Levy '01 (coach),
+ James Lofton '03, Billy Shaw '99, Thurman Thomas '07
+ </p>
+</div>
+<p id="brownsMenu"><a href="">Cleveland Browns</a></p>
+<div id="browns" class="collapsed">
+ <p>Doug Atkins '82, Jim Brown '71, Paul Brown '67 (coach/owner),
+ Willie Davis '81, Len Dawson '87, Joe Delamielleure '03, Len Ford '76
+ </p>
+</div>
+
+</body>
+
+</html>
